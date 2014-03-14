@@ -3,38 +3,66 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="utf-8" />
-	<title>mintchipleaf</title>
+	<title>mint</title>
 	<link rel="stylesheet" type="text/css" href="styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/games.css">
 </head>
 <body class="bg-dark">
 	<div id="container">
-		<div id="shutter" class="light-text bg-dark">
+		<div id="shutter" class="text-light bg-dark">
 			<span id="title">mint</span>
 			<div id="navigation">
 			<nav>
 			  <ul id="navlinks">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Games</a></li>
-				<li><a href="#">Sites</a></li>
-				<li><a href="#">Apps</a></li>
+				<li><a href="#" onclick="active(this)">About</a></li>
+				<li><a href="#" onclick="active(this)">Games</a></li>
+				<li><a href="#" onclick="active(this)">Sites</a></li>
+				<li><a href="#" onclick="active(this)">Apps</a></li>
 			  </ul>
 			</nav>
 			</div>
 		</div>
-		<div id="content" class="bg-light">
+		<div id="content" class="bg-light rounded">
+			<span id="page-name" class="font50px text-dark bg-medium shadow">Games</span>
+			<div id="item-list">
+				<div id="column-left">
+					<div class="item"><a href="#">
+						<img class="item-pic" src="images/basejump.png"></img>
+						<div class="item-name bg-medium text-dark font50px shadow">
+							<span class="item-title">base.jump</span>
+						</div>
+					</a></div>
+				</div>
+				<div id="column-right">
+					<div class="item"><a href="#">
+						<img class="item-pic" src="images/fj.png"></img>
+						<div class="item-name bg-medium text-dark font50px shadow">
+							<span class="item-title">Echo Bat</span>
+						</div>
+					</a></div>
+				</div>
+			</div>
 		</div>
 		<div id="footer" class="bg-medium">
-			mint c2014
+			Copyright mint 2014
 		</div>
 	</div>
 	<script src="jquery-2.1.0.min.js"></script>
 	<script>
 	$(document).ready(function(){
-		$("#navigation a").click(function() {
+		function active(e) {
+		    $$('.active').each(function(i) {
+		        i.removeClassName('active');
+		        console.log("butt");
+		    });
+		    e.addClassName('active');
+		};
+		/*$("#navigation a").click(function() {
+
 			$("shutter").animate({ height: 100}, 600);
 			$("title").animate({ left: 100}, 600);
-		});
+		});*/
 	});
 	</script> 
 </body>
