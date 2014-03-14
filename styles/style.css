@@ -45,6 +45,10 @@ nav a:hover {
 .bg-dark {
 	background-color: #5c5987;
 }
+.bg-black {
+	/*background-color: #5c5863;*/
+	background-color: black;
+}
 .bg-light {
 	background-color: #b1f8d0;
 }
