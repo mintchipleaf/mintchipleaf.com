@@ -42,6 +42,9 @@ nav a:hover {
 .text-dark {
 	color: #5c5863;
 }
+.text-medium {
+	color: #9999FF;
+}
 .bg-dark {
 	background-color: #5c5987;
 }
