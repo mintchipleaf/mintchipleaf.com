@@ -18,7 +18,7 @@ a {
 nav ul li {
 	font-size: 25px;
 	display: inline;
-	padding-right: 1em;
+	padding-right: 20px;
 }
 nav a {
 	o-transition:.3s;
@@ -53,7 +53,8 @@ nav a:hover {
 	background-color: black;
 }
 .bg-light {
-	background-color: #b1f8d0;
+	/*background-color: #b1f8d0;*/
+	background-color: #9BE2B9;
 }
 .bg-medium {
 	background-color: #9999FF;
@@ -64,8 +65,11 @@ nav a:hover {
 .font50px {
 	font-size: 50px;
 }
-.shadow {
+.shadow-dark {
 	box-shadow: 5px 5px #5c5987;
+}
+.shadow-light {
+	box-shadow: 5px 5px #87CEA5;
 }
 #container {
 	position: absolute;
@@ -76,14 +80,14 @@ nav a:hover {
 		position: relative;
 		width: 100%;
 		text-align: center;
-		height: 100px;
+		height: 150px;
 	}
 		#title {
 			font-size: 50px;
 		}
 		#navlinks {
 			position: absolute;
-			top: 70px;
+			top: 125px;
 			left: 0;
 			right: 0;
 		}
