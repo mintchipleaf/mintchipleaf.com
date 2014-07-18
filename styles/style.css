@@ -8,6 +8,38 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('../monoicons/MonoSocialIconsFont-1.10.eot');
+    src: url('../monoicons/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('../monoicons/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('../monoicons/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('../monoicons/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('../monoicons/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}
+
 body {
 	font-family: pixelade, pixelade-webfont;
 }
@@ -18,7 +50,8 @@ a {
 nav ul li {
 	font-size: 25px;
 	display: inline;
-	padding-right: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 nav a {
 	o-transition:.3s;
@@ -31,6 +64,9 @@ nav a {
 nav a:hover {
 	border-bottom: 5px solid #9999FF;
 	color: #9999FF;
+}
+nav a .underline {
+
 }
 .active {
 	/*color: #9999FF;*/
@@ -71,6 +107,27 @@ nav a:hover {
 .shadow-light {
 	box-shadow: 5px 5px #87CEA5;
 }
+.contains-links a {
+	color: #ff1f4c;
+}
+.contains-links a:hover {
+	color: #5c5863;
+}
+.
+.item {
+	height: 250px;
+	width: 300px;
+	margin-bottom: 20px;
+}
+	.item-pic {
+		height: 200px;
+	}
+	.item-name {
+		height:50px;
+	}
+		.item-title {
+			margin: 10px 20px;
+		}
 #container {
 	position: absolute;
 	width: 100%;
@@ -80,16 +137,35 @@ nav a:hover {
 		position: relative;
 		width: 100%;
 		text-align: center;
-		height: 150px;
+		height: 120px;
 	}
+		#mintsymbol {
+
+		}
+		#mintsymbol img {
+			margin-top: 10px;
+			height:100px;
+		}
 		#title {
 			font-size: 50px;
 		}
 		#navlinks {
 			position: absolute;
-			top: 125px;
+			top: 120px;
 			left: 0;
 			right: 0;
+		}
+		#externallinks {
+			position:absolute;
+			top: 140px;
+			left: 0;
+			right: 0;
+		}
+		#externallinks a {
+			font-size: 50px;
+		}
+		#externallinks a:hover {
+			border:none;
 		}
 	#content {
 		position: relative;

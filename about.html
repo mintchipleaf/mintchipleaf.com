@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/png" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<link rel="stylesheet" type="text/css" href="styles/games.css">
+	<link rel="stylesheet" type="text/css" href="styles/about.css">
 </head>
 <body class="bg-dark">
 	<div id="container">
@@ -17,8 +17,8 @@
 			<div id="navigation">
 			<nav>
 			  <ul id="navlinks">
-				<li><a href="./about.html" onclick="active(this)">About</a></li>
-				<li><a href="./index.html" onclick="active(this)">Games</a></li>
+			  	<li><a href="./about.html" class="working" onclick="active(this)">About</a></li>
+				<li><a href="./index.html" class="working" onclick="active(this)">Games</a></li>
 				<li><a href="./sites.html" class="inactive" onclick="active(this)">Sites</a></li>
 				<li><a href="./apps.html" class="inactive" onclick="active(this)">Apps</a></li>
 				&nbsp&nbsp&nbsp&nbsp
@@ -27,29 +27,14 @@
 			</div>
 		</div>
 		<div id="content" class="bg-light">
-			<span id="page-name" class="font50px text-dark bg-medium shadow-dark">Games</span>
-			<div id="item-list">
-				<div id="column-left">
-					<div class="item"><a href="/games/ludum">
-						<img class="item-pic" src="images/arkeynoid.png"></img>
-						<div class="item-name bg-medium text-dark font50px shadow-dark">
-							<span class="item-title">ARKEYNOID</span>
-						</div>
-					</a></div>
-					<div class="item"><a href="/games/echobat">
-						<img class="item-pic" src="images/fj.png"></img>
-						<div class="item-name bg-medium text-dark font50px shadow-dark">
-							<span class="item-title">Echo Bat</span>
-						</div>
-					</a></div>
+			<span id="page-name" class="font50px text-dark bg-medium shadow-dark">About</span>
+			<div id ="bio-container" class="text-dark contains-links">
+				<div id="bio-pic" class="width40">
+					<img id="mattie_pic" class="shadow-dark item" src="images/mattie.jpg"></img>
+					<img id="mint_pic" class="shadow-dark item" src="images/marumint.png"></img>
 				</div>
-				<div id="column-right">
-					<div class="item"><a href="/games/basejump">
-						<img class="item-pic" src="images/basejump.png"></img>
-						<div class="item-name bg-medium text-dark font50px shadow-dark">
-							<span class="item-title">base.jump</span>
-						</div>
-					</a></div>
+				<div id="bio-text" style="font-size:25px">
+					I'm Mattie Richards and I'm a designer and developer. I want to create, and make things more beautiful.
 				</div>
 			</div>
 		</div>

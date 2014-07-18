@@ -1,0 +1,29 @@
+#bio-container {
+	position: absolute;
+	width: 100%;
+	/*height: 100%;*/
+}
+#bio-pic {
+	float: left;
+	margin-left: 40px;
+	margin-top: 40px;
+}
+#bio-text {
+	float:right;
+	width: 60%;
+	margin-top: 40px;
+	margin-right: 40px;
+}
+#mattie_pic {
+	display: block;
+	width: 250px;
+	margin-bottom: 30px;
+}
+#mint_pic {
+	width: 250px;
+	display: block;
+}
+#bio-links {
+	font-size: 30px;
+	margin-bottom: 20px;
+}

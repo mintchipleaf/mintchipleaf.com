@@ -24,16 +24,3 @@
 		float: right;
 		margin-right: 10%;
 	}
-	.item {
-		height: 250px;
-		width: 300px;
-	}
-		.item-pic {
-			height: 200px;
-		}
-		.item-name {
-			height:50px;
-		}
-			.item-title {
-				margin: 10px 20px;
-			}
