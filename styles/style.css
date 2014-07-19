@@ -41,7 +41,9 @@ a.symbol:before {
 }
 
 body {
-	font-family: pixelade, pixelade-webfont;
+	font-family:roboto, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
 }
 a {
 	text-decoration: none;
@@ -67,6 +69,9 @@ nav a:hover {
 }
 nav a .underline {
 
+}
+.pixelade {
+	font-family: pixelade, pixelade-webfont;
 }
 .active {
 	/*color: #9999FF;*/
@@ -108,37 +113,17 @@ nav a .underline {
 	box-shadow: 5px 5px #87CEA5;
 }
 .contains-links a {
-	color: #ff1f4c;
+	/*border-bottom: 1px solid #ff1f4c;
+	/*color: #ff1f4c;*/
+	text-decoration: underline;
 }
 .contains-links a:hover {
-	color: #5c5863;
+	/*color: #5c5863;*/
+	color: #ff1f4c;
 }
-#item-list {
-	position: absolute;
-	width: 90%;
-	height: 90%;
-	margin: 5%;
+.content {
+	margin:40px;
 }
-#item-list a {
-	o-transition:.3s;
-	ms-transition:.3s;
-	moz-transition:.3s;
-	webkit-transition:.3s;
-	transition:.3s;
-}
-#item-list a:hover {
-	background-color: #ff1f4c;
-}
-	#column-left {
-		width: 300px;
-		float: left;
-		margin-left: 5%;		
-	}
-	#column-right {
-		width: 300px;
-		float: right;
-		margin-right: 10%;
-	}
 .item {
 	height: 250px;
 	width: 300px;
@@ -153,7 +138,6 @@ nav a .underline {
 		.item-title {
 			margin: 10px 20px;
 		}
-
 #container {
 	position: absolute;
 	width: 100%;
@@ -180,6 +164,8 @@ nav a .underline {
 			top: 120px;
 			left: 0;
 			right: 0;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
 		}
 		#externallinks {
 			position:absolute;
@@ -201,7 +187,7 @@ nav a .underline {
 	}
 		#page-name {
 			width: auto;
-			margin-left: 5%;
+			margin-left: 40px;
 			padding-top: 5px;
 			padding-left: 10px;
 			padding-right: 10px;

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>mint</title>
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/podcasts.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,100,300' rel='stylesheet' type='text/css'>
+</head>
+<body class="bg-dark">
+	<div id="container">
+		<div id="shutter" class="text-light bg-dark">
+			<div id="mintsymbol"><img src="./images/mintsymbol.png"></div>			<!--<span id="title">mint</span>-->
+			<div id="navigation">
+			<nav>
+			  <ul id="navlinks">
+			  	<li><a href="./about.html" class="working" onclick="active(this)">About</a></li>
+				<li><a href="./index.html" class="working" onclick="active(this)">Games</a></li>
+				<li><a href="./sites.html" class="inactive" onclick="active(this)">Sites</a></li>
+				<li><a href="./apps.html" class="inactive" onclick="active(this)">Apps</a></li>
+  				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  				</ul>
+			</nav>
+			</div>
+		</div>
+		<div id="content" class="bg-light">
+			<span id="page-name" class="font50px text-dark bg-medium shadow-dark pixelade">Podcasts</span>
+			<div class="content text-dark contains-links">
+				<ul>
+					<li class="list-title">Games</li>
+						<ul>
+							<li class="list-item"><a href="">Indie Megacast</a></li>
+							<li class="list-item"><a href="">Critical Distance</a></li>
+							<li class="list-item"><a href="">Tone Control</a></li>
+							<li class="list-item"><a href="">Girlfriend Mode</a></li>
+							<li class="list-item"><a href="">Infinite Ammo</a></li>
+						</ul>
+					<li class="list-title">Story</li>
+						<ul>
+							<li class="list-item"><a href="">99% Invisible</a></li>
+							<li class="list-item"><a href="">The Memory Palace</a></li>
+							<li class="list-item"><a href="">Song Exploder</a></li>
+						</ul>
+					<li class="list-title">Current Events</li>
+						<ul>
+							<li class="list-item"><a href="">The Vergecast</a></li>
+							<li class="list-item"><a href="">This Is Only A Test</a></li>
+							<li class="list-item"><a href="">Throwing Shade</a></li>
+						</ul>
+					<li class="list-title">Movies/Books/Etc</li>
+						<ul>
+							<li class="list-item"><a href="">Wham Bam Pow</a></li>
+							<li class="list-item"><a href="">Ladylike Book Club</a></li>
+							<li class="list-item"><a href="">Still Untitled: Adam Savage</a></li>
+						</ul>
+					<li class="list-title">Comedy</li>
+						<ul>
+							<li class="list-item"><a href="">Judge John Hodgeman</a></li>
+							<li class="list-item"><a href="">Oh No Ross And Carrie</a></li>
+						</ul>
+				</ul>
+			</div>
+		</div>
+		<div id="footer" class="bg-medium pixelade">
+			Copyright mint 2014
+		</div>
+	</div>
+	<script src="scripts/jquery-2.1.0.min.js"></script>
+	<script src="scripts/obelisk.js"></script>
+	<script src="scripts/canvas.js"></script>
+	<script>
+	$(document).ready(function(){
+		function active(e) {
+		    $$('.active').each(function(i) {
+		        i.removeClassName('active');
+		        console.log("butt");
+		    });
+		    e.addClassName('active');
+		};
+		/*$("#navigation a").click(function() {
+
+			$("shutter").animate({ height: 100}, 600);
+			$("title").animate({ left: 100}, 600);
+		});*/
+	});
+	</script> 
+</body>
+</html>
