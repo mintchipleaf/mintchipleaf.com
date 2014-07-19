@@ -54,6 +54,7 @@ nav ul li {
 	display: inline;
 	padding-right: 10px;
 	padding-left: 10px;
+	font-weight: 200;
 }
 nav a {
 	o-transition:.3s;
