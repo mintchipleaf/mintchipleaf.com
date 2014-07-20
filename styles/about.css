@@ -4,7 +4,8 @@
 #bio-text {
 	float:right;
 	width: 60%;
-	line-height: 130%
+	line-height: 130%;   
+	text-align: justify;
 }
 #mattie_pic {
 	display: block;
