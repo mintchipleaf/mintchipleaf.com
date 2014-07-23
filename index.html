@@ -7,57 +7,28 @@
 	<link rel="icon" type="image/png" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<link rel="stylesheet" type="text/css" href="styles/games.css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,100,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="styles/splash.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,100,300' rel='stylesheet' type='text/css'>	
 </head>
 <body class="bg-dark">
 	<div id="container">
 		<div id="shutter" class="text-light bg-dark">
 			<div id="mintsymbol"><img src="./images/mintsymbol.png"></div>
-			<!--<span id="title">mint</span>-->
+			<div id="minttext">m nt</div>
+			<div id="splashlinks" class="font50px">
+				<a href="http://www.twitter.com/mintchipleaf"><span class='symbol'>twitterbird</span></a><a href="http://www.github.com/mintleaf"><span class='symbol'>githubalt</span></a><a href="https://www.linkedin.com/pub/mattie-richards/65/b10/35"><span class='symbol'>linkedin</span></a></span>
+			</div>
 			<div id="navigation">
-			<nav>
-			  <ul id="navlinks">
-				<li><a href="./about.html" onclick="active(this)">About</a></li>
-				<li><a href="./index.html" onclick="active(this)">Games</a></li>
-				<li><a href="./sites.html" class="inactive" onclick="active(this)">Sites</a></li>
-				<li><a href="./apps.html" class="inactive" onclick="active(this)">Apps</a></li>
-				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			  </ul>
-			</nav>
+				<nav>
+				  <ul id="navlinks">
+				  	<li><a href="./about.html" class="working" onclick="active(this)">About</a></li>
+					<li><a href="./games.html" class="working" onclick="active(this)">Games</a></li>
+					<li><a href="./sites.html" class="inactive" onclick="active(this)">Sites</a></li>
+					<li><a href="./apps.html" class="inactive" onclick="active(this)">Apps</a></li>
+				  </ul>
+				</nav>
 			</div>
 		</div>
-		<div id="content" class="bg-light">
-			<span id="page-name" class="font50px text-dark bg-medium shadow-dark pixelade">Games</span>
-			<span id="link-panel" style="margin-left: 545px" class="font50px text-dark bg-medium shadow-dark-left pixelade"><a href="http://www.twitter.com/mintchipleaf"><span class='symbol'>twitterbird</span></a><a href="http://www.github.com/mintleaf"><span class='symbol'>githubalt</span></a><a href="https://www.linkedin.com/pub/mattie-richards/65/b10/35"><span class='symbol'>linkedin</span></a></span>
-			<div id="item-list" class="pixelade">
-				<div id="column-left">
-					<div class="item"><a href="/games/ludum">
-						<img class="item-pic" src="images/arkeynoid.png"></img>
-						<div class="item-name bg-medium text-dark font50px shadow-dark">
-							<span class="item-title">ARKEYNOID</span>
-						</div>
-					</a></div>
-					<div class="item"><a href="/games/echobat">
-						<img class="item-pic" src="images/fj.png"></img>
-						<div class="item-name bg-medium text-dark font50px shadow-dark">
-							<span class="item-title">Echo Bat</span>
-						</div>
-					</a></div>
-				</div>
-				<div id="column-right">
-					<div class="item"><a href="/games/basejump">
-						<img class="item-pic shadow" src="images/basejump.png"></img>
-						<div class="item-name bg-medium text-dark font50px shadow-dark-left">
-							<span class="item-title">base.jump</span>
-						</div>
-					</a></div>
-				</div>
-			</div>
-		</div>
-		<!--<div id="footer" class="bg-medium pixelade">
-			Copyright mint 2014
-		</div>-->
 	</div>
 	<script src="scripts/jquery-2.1.0.min.js"></script>
 	<script src="scripts/obelisk.js"></script>
@@ -69,7 +40,7 @@
 		        i.removeClassName('active');
 		        console.log("butt");
 		    });
-		    e.addClassName('active');
+		    e.addClassName('active'); 
 		};
 		/*$("#navigation a").click(function() {
 
@@ -79,4 +50,4 @@
 	});
 	</script> 
 </body>
-</html>
+</html>x

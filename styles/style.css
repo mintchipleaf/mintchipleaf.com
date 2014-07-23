@@ -154,22 +154,28 @@ nav a .underline {
 		height: 120px;
 	}
 		#mintsymbol {
-
+			margin-right: 30px;
 		}
 		#mintsymbol img {
-			margin-top: 10px;
+			position: absolute;
+			top: 10px;
 			height:100px;
 		}
-		#title {
+		#minttext {
+			position: absolute;
+			top: 65px;
+			left: 0;
+			right: 0;
+			width: auto;
 			font-size: 50px;
+			font-weight: 200;
+
 		}
 		#navlinks {
 			position: absolute;
-			top: 120px;
+			top: 125px;
 			left: 0;
 			right: 0;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 300;
 		}
 		#externallinks {
 			position:absolute;
