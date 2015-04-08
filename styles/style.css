@@ -19,6 +19,14 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+	font-family: 'sofiapro';
+	src: url('../sofiapro/SofiaProLight.otf');
+	src: url('../pixelade/SofiaProExtraLight.otf') format('opentype'),
+		 url('../pixelade/SofiaProUltraLight.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
 
 .symbol, a.symbol:before {
     font-family: 'Mono Social Icons Font';
@@ -41,8 +49,8 @@ a.symbol:before {
 }
 
 body {
-	font-family:roboto, sans-serif;
-	font-weight: 300;
+	font-family:sofiapro, sans-serif;
+	font-weight: 100;
 	font-size: 18px;
 }
 a {
@@ -154,7 +162,7 @@ nav a .underline {
 		height: 120px;
 	}
 		#mintsymbol {
-			margin-right: 30px;
+			margin-right: 80px;
 		}
 		#mintsymbol img {
 			position: absolute;
